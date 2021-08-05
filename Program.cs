@@ -7,8 +7,9 @@ namespace IfStatements
         static void Main(string[] args)
         {
             bool isMale = true;
+            bool isTall = true;
 
-            if (isMale)
+            if (isMale && isTall)
             {
                 Console.WriteLine("You are male");
             }
