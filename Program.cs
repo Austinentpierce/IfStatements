@@ -6,28 +6,51 @@ namespace IfStatements
     {
         static void Main(string[] args)
         {
-            bool isMale = false;
-            bool isTall = false;
+            //bool isMale = false;
+            //bool isTall = false;
 
-            if (isMale && isTall)
+            //if (isMale && isTall)
+            //{
+            // Console.WriteLine("You are a tall male");
+            //}
+            //else if (isMale && !isTall)
+            //{
+            //  Console.WriteLine("You are a short male");
+            //}
+            //else if (!isMale && isTall)
+            //{
+            //  Console.WriteLine("You are not a male but you are tall");
+            //}
+            //else
+            //{
+            //  Console.WriteLine("You are not tall or a male");
+            //}
+
+
+            //Console.ReadLine();
+
+
+            Console.WriteLine(GetMax(40, 60, 5));
+
+            Console.ReadLine();
+
+        }
+        static int GetMax(int num1, int num2, int num3)
+        {
+            int result;
+            if (num1 >= num2 && num1 >= num3)
             {
-                Console.WriteLine("You are a tall male");
+                result = num1;
             }
-            else if (isMale && !isTall)
+            else if (num2 >= num1 && num2 >= num3)
             {
-                Console.WriteLine("You are a short male");
-            }
-            else if (!isMale && isTall)
-            {
-                Console.WriteLine("You are not a male but you are tall");
+                result = num2;
             }
             else
             {
-                Console.WriteLine("You are not tall or a male");
+                result = num3;
             }
-
-
-            Console.ReadLine();
+            return result;
         }
     }
 }
