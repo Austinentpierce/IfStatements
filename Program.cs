@@ -6,16 +6,24 @@ namespace IfStatements
     {
         static void Main(string[] args)
         {
-            bool isMale = true;
-            bool isTall = true;
+            bool isMale = false;
+            bool isTall = false;
 
             if (isMale && isTall)
             {
-                Console.WriteLine("You are male");
+                Console.WriteLine("You are a tall male");
+            }
+            else if (isMale && !isTall)
+            {
+                Console.WriteLine("You are a short male");
+            }
+            else if (!isMale && isTall)
+            {
+                Console.WriteLine("You are not a male but you are tall");
             }
             else
             {
-                Console.WriteLine("You are not male");
+                Console.WriteLine("You are not tall or a male");
             }
 
 
